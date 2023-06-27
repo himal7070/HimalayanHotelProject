@@ -1,0 +1,17 @@
+﻿@page
+@model HimalayanOnlineHotelBooking.Pages.Shared._LoginStatusPartialModel
+@{
+}
+@if (!string.IsNullOrEmpty(Model.LoggedInUsername))
+{
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                Welcome, @Model.LoggedInUsername!
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" asp-area="" asp-page="/Hotel/Account/Logout">Logout</a>
+            </div>
+        </li>
+    </ul>
+}

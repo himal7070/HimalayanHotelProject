@@ -1,0 +1,608 @@
+
+/*------------------------------- Common Function -------------------------------*/
+html {
+  font-size: 14px;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+form {
+    height: auto;
+    width: auto;
+    background-color: rgba(255,255,255,0.13);
+    position: relative;
+    top: auto;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 50px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+button {
+    background: black;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+
+
+
+.input-textbox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .input-textbox input {
+        width: 100%;
+        color: #000;
+        border: none;
+        border-bottom: 1px solid #000;
+        padding: 10px;
+        font-size: 16px;
+        transition: border-bottom-color 0.3s ease;
+      
+    }
+
+        .input-textbox input:focus {
+            border-bottom-color: #007bff;
+            border-radius: 0; 
+            outline: none; 
+        }
+
+    .input-textbox label {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #000;
+        transition: top 0.3s ease, font-size 0.3s ease;
+        pointer-events: none;
+       
+    }
+
+    .input-textbox input:focus ~ label,
+    .input-textbox input:not(:placeholder-shown) ~ label {
+        top: 1px;
+        font-size: 12px;
+        color: black;
+    }
+
+.text-danger {
+    font-size: 12px;
+    color: red;
+}
+
+.input-textbox input::placeholder {
+    color: transparent;
+}
+
+
+.titleLogin-Signup {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.titleLogin-Signup-info {
+    font-size: 25px;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+
+/*------------------------------- Homepage -------------------------------*/
+
+.homepageVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+
+
+.home-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+}
+
+.home-text h1 {
+    font-weight:500;
+    color: black;
+    font-size: 60px;
+    margin: 0;
+    font-family: Berkshire Swash;
+}
+
+.buttonContact {
+    position: relative;
+    background: #fff;
+    border: none;
+    color: #000;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .home-text h1 {
+        font-size: 8vw;
+    }
+
+    .buttonContact {
+        padding: 2vw 6vw; 
+        font-size: 3vw; 
+        margin-top: 5vw; 
+    }
+
+    .logo {
+        text-indent: -8vw;
+        height: 9.9vw; 
+        font-size: 6vw; 
+    }
+}
+
+
+/*------------------------------- About Us -------------------------------*/
+
+
+.info-image img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+
+}
+
+
+
+/*------------------------------- Contact Us -------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.textarea-textbox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .textarea-textbox textarea {
+        width: 100%;
+        color: #000;
+        border: none;
+        border-bottom: 1px solid #000;
+        padding: 10px;
+        font-size: 16px;
+        resize: vertical;
+        transition: border-bottom-color 0.3s ease;
+        background-color: transparent;
+    }
+
+        .textarea-textbox textarea:focus {
+            border-bottom-color: #007bff;
+        }
+
+    .textarea-textbox label {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 16px;
+        color: #000;
+        transition: top 0.3s ease, font-size 0.3s ease;
+        pointer-events: none;
+        opacity: 0;
+        z-index: -1; 
+    }
+
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 1.5% 0;
+}
+
+.title-info {
+    padding-bottom: 8%;
+}
+
+
+/*------------------------------- Log In -------------------------------*/
+
+.checkbox {
+    position:center
+}
+
+.txt1 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    color: black;
+    line-height: 1.5;
+}
+
+.txt2 {
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    color: red;
+    line-height: 5.5;
+}
+
+/*------------------------------- sign up -------------------------------*/
+
+
+.containerSignup {
+    display: flex;
+    width: 40%;
+    height: 80%;
+}
+
+.left-half,
+.right-half {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+
+
+.titleLogin-Signup-info {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*------------------------------- privacy policy -------------------------------*/
+
+.privacyDetails h2 {
+    font-size: 20px;
+}
+
+.privacyDetails h3 {
+        font-size: 15px;
+}
+
+
+/*---------------------------*/
+
+.status{
+    left: -105px;
+}
+
+
+/*------------------------------- booking page -------------------------------*/
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+/*------------------------------- Guest Details page -------------------------------*/
+
+
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-form .form-group {
+    margin-bottom: 15px;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+    .profile-form input:focus {
+        border-bottom-color: #007bff;
+    }
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    margin-right: 10px;
+}
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+
+
+
+/*------------------------------- success page -------------------------------*/
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.success-icon {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.success-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .success-button:hover {
+        background-color: #218838;
+    }
+
+
+
+/* Common Function */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+/* Contact Us */
+@media (max-width: 767px) {
+    form {
+        padding: 30px;
+    }
+}
+
+
+/* Log In */
+@media (max-width: 767px) {
+    .txt1 {
+        font-size: 12px;
+    }
+}
+
+
+/* Sign Up */
+@media (max-width: 768px) {
+    .containerSignup {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .left-half,
+    .right-half {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titleLogin-Signup-info {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Privacy Policy */
+@media (max-width: 767px) {
+    .privacyDetails h2 {
+        font-size: 18px;
+    }
+
+    .privacyDetails h3 {
+        font-size: 13px;
+    }
+}
+
+/* Booking Page */
+@media (max-width: 767px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+/* Guest Details Page */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+/* Success Page */
+@media (max-width: 767px) {
+    .success-container {
+        padding: 20px;
+    }
+
+    .success-message {
+        font-size: 24px;
+    }
+
+    .success-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        margin-bottom: 30px;
+    }
+
+    .input-textbox input {
+        font-size: 14px;
+    }
+
+
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .buttonContact {
+        font-size: 13px;
+    }
+
+    .textarea-textbox textarea {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .title-info {
+        padding-bottom: 5%;
+    }
+
+    .profile-form label {
+        font-size: 14px;
+    }
+
+    .profile-form input {
+        font-size: 14px;
+    }
+
+    .error-message {
+        font-size: 14px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 14px;
+    }
+
+    .success-message {
+        font-size: 24px;
+    }
+
+    .success-text {
+        font-size: 16px;
+    }
+
+    .success-button {
+        font-size: 14px;
+    }
+}
+
+
+
+

@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HimalayanOnlineHotelBooking
+build_property.RootNamespace = HimalayanOnlineHotelBooking
+build_property.ProjectDir = C:\Users\himal\HimalayanHotelProject\HimalayanOnlineHotelBooking\HimalayanOnlineHotelBooking\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\himal\HimalayanHotelProject\HimalayanOnlineHotelBooking\HimalayanOnlineHotelBooking
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Account/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQWNjb3VudFxTaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Account/SuccessPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQWNjb3VudFxTdWNjZXNzUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/BookingDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQm9va2luZ0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/contactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcY29udGFjdFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Guests/GuestDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcR3Vlc3RzXEd1ZXN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/Rooms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcUm9vbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Hotel/SuccessContactPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcU3VjY2Vzc0NvbnRhY3RQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Shared/_LoginStatusPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblN0YXR1c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/himal/HimalayanHotelProject/HimalayanOnlineHotelBooking/HimalayanOnlineHotelBooking/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rdp54ntgr9

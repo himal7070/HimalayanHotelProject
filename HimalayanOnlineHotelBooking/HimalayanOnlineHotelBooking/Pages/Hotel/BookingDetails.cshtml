@@ -1,0 +1,26 @@
+﻿@page
+@model HimalayanOnlineHotelBooking.Pages.Hotel.BookingDetailsModel
+@{
+}
+<div class="success-container">
+    <i class="fas fa-check-circle success-icon"></i>
+    <h1 class="success-message">Success!</h1>
+    <p class="success-text">We have received your booking successfully.Please Do not forget to show your booking id at reception when you arrive. We hope you get pleasant stay at our Hotel.</p>
+    <h1>Booking Details</h1>
+
+
+    @if (Model.Booking != null)
+    {
+        <p>Booking ID: @Model.Booking.BookingId</p>
+        <p>Booking Date: @Model.Booking.BookingDate</p>
+        <p>Stay Duration: @Model.Booking.StayDuration</p>
+        <p>Check-in Date: @Model.Booking.CheckInDate</p>
+        <p>Check-out Date: @Model.Booking.CheckOutDate</p>
+    }
+    else
+    {
+        <p>No booking details found.</p>
+    }
+    <br />
+    <a href="/" class="success-button">Go Back to Homepage</a>
+</div>

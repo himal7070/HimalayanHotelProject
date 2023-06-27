@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Views\AccountDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Bookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Discounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FindGuestBookingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Guests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RegisterNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

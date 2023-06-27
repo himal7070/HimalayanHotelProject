@@ -1,0 +1,42 @@
+﻿@page
+@model HimalayanOnlineHotelBooking.Pages.Hotel.ContactUsModel
+@{
+}
+
+<main>
+    <form method="post">
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">@Model.ErrorMessage</div>
+        }
+
+        <div class="form">
+            <div class="title">Contact us</div>
+            <div class="title-info">We'll get back to you soon!</div>
+
+            <div class="input-textbox">
+                <input asp-for="FirstName" placeholder="First Name" required>
+                <label asp-for="FirstName">First Name</label>
+            </div>
+
+            <div class="input-textbox">
+                <input asp-for="LastName" placeholder="Last Name" required>
+                <label asp-for="LastName">Last Name</label>
+            </div>
+
+            <div class="input-textbox">
+                <input asp-for="Email" placeholder="Email" required>
+                <label asp-for="Email">Email</label>
+            </div>
+
+            <div class="textarea-textbox">
+                <textarea asp-for="Message" rows="5" placeholder="" required> </textarea>
+                <label asp-for="Message">Message</label>
+            </div>
+
+            <div class="button-send">
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+</main>

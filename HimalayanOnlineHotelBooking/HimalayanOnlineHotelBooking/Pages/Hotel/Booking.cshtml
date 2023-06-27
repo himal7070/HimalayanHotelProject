@@ -1,0 +1,130 @@
+﻿
+@page
+@using BusinessLogicLayer.InterfacesBLL;
+@using System.Data;
+@model HimalayanOnlineHotelBooking.Pages.Hotel.BookingModel
+@{
+}
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnCalculateTotalCost').click(function (e) {
+                e.preventDefault(); // prevent the default form submission
+
+                var form = $('form')[0];
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                $.post('@Url.Page("/Hotel/Booking", "CalculateTotalCost")', $('form').serialize())
+                    .done(function (response) {
+                        $('#stayDuration').text(response.stayDuration);
+                        $('#totalCost').text(response.totalCost);
+
+                        $('#btnSubmit').prop('disabled', false);
+                    })
+                    .fail(function (error) {
+                        console.log(error);
+                    });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form method="post">
+        @if (!ModelState.IsValid)
+        {
+            <div class="alert alert-danger">
+                <h4>There are errors with your submission:</h4>
+                <ul>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </ul>
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">@Model.ErrorMessage</div>
+        }
+
+        <div class="input-textbox">
+            <input type="hidden" asp-for="RoomType" />
+            <label for="cbRoomType">Room Type:</label>
+            <br />
+
+            <select id="cbRoomType" onchange="setRoomType(this.value)" asp-for="RoomTypesSelected" name="RoomTypesSelected" required>
+                <option value="" selected disabled>Select Room Type</option>
+                @if (Model.RoomTypes != null)
+                {
+                    foreach (var roomType in Model.RoomTypes)
+                    {
+                        <option>@roomType</option>
+                    }
+                }
+            </select>
+            <div class="text-danger">@Html.ValidationMessageFor(model => model.RoomTypesSelected)</div>
+        </div>
+
+        <div class="input-textbox">
+            <input type="hidden" asp-for="booking.BookingDate" />
+        </div>
+        <div class="input-textbox">
+            <input type="date" asp-for="booking.CheckInDate" required />
+            <label for="dateTimeCheckIn">Check-In Date:</label>
+            <div class="text-danger">@Html.ValidationMessageFor(model => model.booking.CheckInDate)</div>
+        </div>
+
+        <div class="input-textbox">
+            <input type="date" asp-for="booking.CheckOutDate" required />
+            <label for="dateTimeCheckOut">Check-Out Date:</label>
+            <div class="text-danger">@Html.ValidationMessageFor(model => model.booking.CheckOutDate)</div>
+        </div>
+
+        <div>
+            <button type="button" id="btnCalculateTotalCost">Calculate Total Cost</button>
+        </div>
+
+        <br />
+        <br />
+        <div class="input-textbox">
+            <div>
+                <label>Stay Duration: <span id="stayDuration">@Model.StayDuration</span></label>
+            </div>
+        </div>
+        <div>
+            <input type="hidden" asp-for="booking.Status" value="default value" />
+        </div>
+        <br />
+        <div class="input-textbox">
+            @if (!string.IsNullOrEmpty(Model.TotalCost.ToString()))
+            {
+                <div>
+                    <label>Total Cost: <span id="totalCost">@Model.TotalCost</span></label>
+                </div>
+            }
+        </div>
+        <br />
+        <div>
+            <button type="submit" id="btnSubmit" name="btnSubmit" asp-page-handler="SubmitBooking" disabled>
+                @(string.IsNullOrEmpty(Model.TotalCost.ToString()) ? "Submit Booking (Calculate Total Cost First)" : "Submit Booking")
+            </button>
+        </div>
+    </form>
+
+    <script>
+        function setRoomType(value) {
+            document.getElementById("RoomType").value = value;
+        }
+    </script>
+</body>
+
+
+
+
+
+
+

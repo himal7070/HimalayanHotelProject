@@ -1,0 +1,99 @@
+﻿@page
+@using BusinessLogicLayer.InterfacesBLL;
+@using System.Data;
+@model HimalayanOnlineHotelBooking.Pages.Hotel.GuestsModel
+@{
+	ViewData["Title"] = "My Profile";
+}
+@inject IGuestBLL guestService
+@{
+    var allGuests = guestService.GetAllGuestInfo();
+    var guestId = Convert.ToInt32(HttpContext.Session.GetInt32("GuestId") ?? 0);
+    Model.OnGet(guestId);
+}
+
+@{
+    bool isLoggedIn = !string.IsNullOrEmpty(Model.LoggedInUsername);
+}
+
+<div class="container">
+ 
+    <form method="post" class="profile-form">
+        <h1>My Profile</h1>
+
+        <input type="hidden" asp-for="GuestId" name="GuestId" id="GuestId" />
+
+        <div class="form-group">
+            <label for="FirstName">First Name:</label>
+            <input type="text" asp-for="Guest.FirstName" name="FirstName" id="FirstName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="LastName">Last Name:</label>
+            <input type="text" asp-for="Guest.LastName" name="LastName" id="LastName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="email" asp-for="Guest.Email" name="Email" id="Email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Phone">Phone:</label>
+            <input type="tel" asp-for="Guest.Phone" name="Phone" id="Phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="PassportNumber">Passport Number:</label>
+            <input type="text" asp-for="Guest.PassportNumber" name="PassportNumber" id="PassportNumber" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Street">Street:</label>
+            <input type="text" asp-for="Guest.Street" name="Street" id="Street" required>
+        </div>
+
+        <div class="form-group">
+            <label for="City">City:</label>
+            <input type="text" asp-for="Guest.City" name="City" id="City" required>
+        </div>
+
+        <div class="form-group">
+            <label for="PostalCode">Postal Code:</label>
+            <input type="text" asp-for="Guest.PostalCode" name="PostalCode" id="PostalCode" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Country">Country:</label>
+            <input type="text" asp-for="Guest.Country" name="Country" id="Country" required>
+        </div>
+
+        @if (Model.ErrorMessage != null)
+        {
+            <p class="error-message">@Model.ErrorMessage</p>
+        }
+
+        <div class="form-actions">
+            <button type="submit" class="btn-primary" asp-page-handler="OnPost">Update My Profile</button>
+        @*    <button type="button" onclick="clearForm()" class="btn-secondary">Clear</button>*@
+        </div>
+
+    </form>
+</div>
+
+@*<script>
+    function clearForm() {
+        document.getElementById("FirstName").value = "";
+        document.getElementById("LastName").value = "";
+        document.getElementById("Email").value = "";
+        document.getElementById("Phone").value = "";
+        document.getElementById("PassportNumber").value = "";
+        document.getElementById("Street").value = "";
+        document.getElementById("City").value = "";
+        document.getElementById("PostalCode").value = "";
+        document.getElementById("Country").value = "";
+    }
+</script>*@
+
+
+

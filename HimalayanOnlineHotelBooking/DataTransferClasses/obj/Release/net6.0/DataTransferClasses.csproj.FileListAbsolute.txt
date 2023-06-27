@@ -1,0 +1,12 @@
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\bin\Release\net6.0\DataTransferClasses.deps.json
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\bin\Release\net6.0\DataTransferClasses.dll
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\bin\Release\net6.0\DataTransferClasses.pdb
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\DataTransferClasses.csproj.AssemblyReference.cache
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\DataTransferClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\DataTransferClasses.AssemblyInfoInputs.cache
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\DataTransferClasses.AssemblyInfo.cs
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\DataTransferClasses.csproj.CoreCompileInputs.cache
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\DataTransferClasses.dll
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\refint\DataTransferClasses.dll
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\DataTransferClasses.pdb
+C:\Users\himal\online-hotel-booking\HimalayanOnlineHotelBooking\DataTransferClasses\obj\Release\net6.0\ref\DataTransferClasses.dll

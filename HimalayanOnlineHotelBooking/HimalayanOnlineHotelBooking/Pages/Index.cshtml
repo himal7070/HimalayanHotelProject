@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Homepage";
+}
+
+
+<body>
+    <div class="container">
+        <header>
+            @if (ViewContext.RouteData.Values["Page"]?.ToString() == "/Index")
+            {
+                <div class="video-wrapper">
+                    <video src="~/img/hotelHomepage.mp4" class="homepageVideo" autoplay loop muted></video>
+                </div>
+            }
+        </header>
+
+        <div class="home-text">
+            <h1>Welcome To Himalayan Hotel</h1>      
+            <a class="buttonContact" href="/Hotel/ContactUs">Contact Us</a>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+

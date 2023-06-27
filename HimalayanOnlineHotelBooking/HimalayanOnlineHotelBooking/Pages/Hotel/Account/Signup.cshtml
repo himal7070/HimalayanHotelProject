@@ -1,0 +1,128 @@
+﻿@page
+@model HimalayanOnlineHotelBooking.Pages.Hotel.Account.SignupModel
+@{
+
+}
+
+<body>
+    <div class="containerSignup">
+        <form method="post">
+            @if (ViewData["LoggedInUsername"] != null)
+            {
+                <div>@ViewData["LoggedInUsername"]</div>
+            }
+            @{
+                var errorMessage = TempData["ErrorMessage"] as string;
+            }
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-danger">@errorMessage</div>
+            }
+           
+            <div class="left-half">
+                <div class="titleLogin-Signup-info">Sign Up</div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.FirstName" placeholder="Guest.FirstName" />
+                    <label asp-for="Guest.FirstName">FirstName</label>
+                    <span asp-validation-for="Guest.FirstName" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.LastName" name="Guest.LastName" id="Guest.LastName" placeholder="Guest.FirstName" />
+                    <label asp-for="Guest.LastName">LastName</label>
+                    <span asp-validation-for="Guest.LastName" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.Email" placeholder="Guest.Email" />
+                    <label asp-for="Guest.Email">Email</label>
+                    <span asp-validation-for="Guest.Email" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.Phone" name="Guest.Phone" id="Guest.Phone" placeholder="Guest.Phone" />
+                    <label asp-for="Guest.Phone">Phone</label>
+                    <span asp-validation-for="Guest.Phone" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.PassportNumber" name="Guest.PassportNumber" id="Guest.PassportNumber" placeholder="Guest.PassportNumber">
+                    <label asp-for="Guest.PassportNumber">PassportNumber</label>
+                    <span asp-validation-for="Guest.PassportNumber" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.Street" name="Guest.Street" id="Guest.Street" placeholder="Guest.Street">
+                    <label for="Guest.Street">Street</label>
+                    <span asp-validation-for="Guest.Street" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.City" name="Guest.City" id="Guest.City" placeholder="Guest.City">
+                    <label asp-for="Guest.City">City</label>
+                    <span asp-validation-for="Guest.City" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.PostalCode" name="Guest.PostalCode" id="Guest.PostalCode" placeholder="Guest.PostalCode">
+                    <label asp-for="Guest.PostalCode">PostalCode</label>
+                    <span asp-validation-for="Guest.PostalCode" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="Guest.Country" name="Guest.Country" id="Guest.Country" placeholder="Guest.Country">
+                    <label asp-for="Guest.Country">Country</label>
+                    <span asp-validation-for="Guest.Country" class="text-danger"></span>
+                </div>
+            
+
+            </div>
+            <div class="right-half">            
+                <div class="input-textbox">
+                    <input asp-for="User.Username" name="User.Username" id="User.Username" placeholder="User.Username">
+                    <label asp-for="User.Username">Username</label>
+                    <span asp-validation-for="User.Username" class="text-danger"></span>
+                </div>
+                <div class="input-textbox">
+                    <input asp-for="User.Password" name="User.Password" id="User.Password" placeholder="User.Password">
+                    <label asp-for="User.Password">Password</label>
+                    <span asp-validation-for="User.Password" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="signup">Create Account</button>
+            </div>
+         
+                
+        </form>
+        @{
+            var successMessage = HttpContext.Session.GetString("SuccessMessage");
+        }
+
+        @if (!string.IsNullOrEmpty(successMessage))
+        {
+            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="successModalLabel">Success</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            @successMessage
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('#successModal').modal('show');
+                });
+            </script>
+        }
+     
+    </div>
+
+</body>
+
+
+
+
+
+
